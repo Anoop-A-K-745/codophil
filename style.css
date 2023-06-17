@@ -161,8 +161,8 @@ h6 {
 
 /* about us start */
 .about-us {
-  background-color: #074f57;
-  background-image: linear-gradient(#fff 37%, rgba(255, 255, 255, 0) 71%), url(./images/Home-page/About-Us-Banner.png);
+  background-color: #fff;
+  background-image: linear-gradient(#fff 37%, rgba(255, 255, 255, 0) 71%), url(./images/Home-page/About-Us-Banner.webp);
   background-size: 100% 100vh;
   width: 100%;
   height: 100vh;
@@ -224,7 +224,7 @@ padding-bottom: 20px;
 /* slideshow gallery start */
 .gallery{
     background-color: white;
-    background-image: url(./images/Home-page/Home-works-banner.png);
+    background-image: url(./images/Home-page/Home-works-banner.webp);
     background-size: 100% 100vh;
     width: 100%;
     height: 100vh;
