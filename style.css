@@ -1,0 +1,311 @@
+body {
+  min-height: 100%;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 20px;
+}
+
+/* Nav bar Start */
+.logo {
+  width: 120px;
+  margin-left: 40px;
+}
+
+.navbar-nav {
+  margin-right: 40px;
+}
+
+.navigation {
+  margin: 10px;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 40px; /* Adjust the height as needed */
+  background-color: darkgray;
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.accent {
+  color: black !important;
+  letter-spacing: 0.25px;
+  margin-left: 5px;
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.contact-button {
+  direction: ltr;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  background-color: #1a1b1f;
+  padding: 12px 25px;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+ul .navbar-nav {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  display: flex;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #1a1b1f;
+  padding: auto 15px;
+}
+#navbarNav ul li {
+  margin: auto 4px;
+}
+
+@media only screen and (max-width: 990px) {
+  .vertical-line {
+    width: 200px;
+    height: 2px;
+    background-color: darkgray;
+    /* margin-left: 0;         */
+  }
+  #navbarNav ul li {
+    margin: 4px auto;
+  }
+}
+
+/* Nav bar end **************************************************************************************** */
+
+/* home page start */
+.home-page {
+  height: 100vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* max-height: 100vh; */
+  max-width: 1920px;
+  min-height: 100vh;
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #e4ebf3;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 38px;
+  line-height: 44px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.heading1 {
+  border: 1px #000;
+  margin-top: 6px;
+  font-family: Open Sans, sans-serif;
+  font-size: 48px;
+}
+.container {
+  margin: auto 5%;
+}
+
+.homepage-left {
+  margin: auto;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.button-primary-2 {
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #1a1b1f;
+  padding: 12px 25px;
+  font-size: 12px;
+  line-height: 20px;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.heading1 {
+  border: 1px #000;
+  margin-top: 6px;
+  font-family: Open Sans, sans-serif;
+  font-size: 48px;
+}
+
+.homepage-banner {
+  width: 100%;
+}
+@media only screen and (max-width: 760px) {
+  .homepage-left {
+    margin: 10px auto;
+  }
+  .homepage-right {
+    margin: 10px auto;
+  }
+}
+
+/* home page end * ************************************************************************************ */
+
+/* about us start */
+.about-us {
+  background-color: #074f57;
+  background-image: linear-gradient(#fff 37%, rgba(255, 255, 255, 0) 71%), url(./images/Home-page/About-Us-Banner.png);
+  background-size: 100% 100vh;
+  width: 100%;
+  height: 100vh;
+margin-top: -10%;
+  text-align: center;
+}
+
+.about-us .container{
+    padding: 120px 30px;
+    margin: auto;
+}
+.about-us .container .row{
+    width: 60%;
+    margin: 0 auto;
+}
+/* about us end  *********************************************************************************** */
+
+/* Works start */
+
+.works{
+    margin-top: 100px;
+    align-items: center;
+  }
+  
+  .works .container{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.works .row{
+    margin: 20px auto;
+}
+.works .col{
+    margin: 0 auto;
+}
+.works-heading{
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.works-heading h2, p{
+padding-bottom: 20px;
+}
+
+.card{
+    width: 100%;
+    margin: 10px auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .card{
+    width: 80%;
+    margin: 10px auto;
+}
+}
+/* works end  *********************************************************************************** */
+
+/* slideshow gallery start */
+.gallery{
+    background-color: white;
+    background-image: url(./images/Home-page/Home-works-banner.png);
+    background-size: 100% 100vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-left{
+  padding: 10px 60px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+.carousel-cell{
+  width: 66%;
+  height: 70vh;
+  margin-right: 10px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-cell::before{
+  display: block;
+  content: '';
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-cell{
+    height: 50vh;
+  }
+  
+}
+
+/* slideshow gallery end *********************************************************************** */
+
+/* testimonial start */
+.testimonial{
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+}
+
+.testimonial-head{
+  margin-top: 20px;
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .testimonial{
+    height: 100vh;
+  }
+}
+/* ------testimonial  close-------*/
+/* testimonial end ****************************************************************************** */
+
+/* footer start */
+.footer{
+  display: flex;
+  justify-content: center;
+}
+.footer-logo{
+  width: 200px;
+  /* text-align: center; */
+  
+}
+
+.footer .container div{
+  text-align: center;
+}
+
+.footer-social-icons a{
+ padding: 5px 20px 0 0;
+}
+
+/* footer end*/
