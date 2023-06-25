@@ -7,8 +7,8 @@ body {
   line-height: 20px;
 }
 
-.text-co{
-  color: #8028E9;
+.text-co {
+  color: #8028e9;
 }
 /* Nav bar Start */
 .logo {
@@ -55,9 +55,9 @@ body {
   transition: all 0.2s;
 }
 
-.contact-button:hover{
-  background-color: #8028E9;
-  color: #fff; 
+.contact-button:hover {
+  background-color: #8028e9;
+  color: #fff;
 }
 
 ul .navbar-nav {
@@ -72,15 +72,14 @@ ul .navbar-nav {
   padding: auto 15px;
 }
 
-.nav-link:hover{
- /* background-color: #d0b2f5; */
- transition: all 0.5s;
-  
- /* box-shadow: 0 0 11px #8028E9; */
-  transform: scale(1.1); 
- border-radius: 25px;
- color: #8028E9;
- 
+.nav-link:hover {
+  /* background-color: #d0b2f5; */
+  transition: all 0.5s;
+
+  /* box-shadow: 0 0 11px #8028E9; */
+  transform: scale(1.1);
+  border-radius: 25px;
+  color: #8028e9;
 }
 #navbarNav ul li {
   margin: auto 4px;
@@ -157,8 +156,8 @@ h6 {
   text-decoration: none;
 }
 .button-primary-2:hover {
-  background-color: #8028E9;
-  color: #fff
+  background-color: #8028e9;
+  color: #fff;
 }
 
 .heading1 {
@@ -180,82 +179,117 @@ h6 {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .heading1{
+    font-size: 35px;
+  }
+
+  .container{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 /* home page end * ************************************************************************************ */
 
 /* about us start */
 .about-us {
   background-color: #fff;
-  background-image: linear-gradient(#fff 37%, rgba(255, 255, 255, 0) 71%), url(./images/Home-page/About-Us-Banner.webp);
+  background-image: linear-gradient(#fff 37%, rgba(255, 255, 255, 0) 71%),
+    url(./images/Home-page/About-Us-Banner.webp);
   background-size: 100% 100vh;
   width: 100%;
   height: 100vh;
-margin-top: -10%;
+  margin-top: -10%;
   text-align: center;
 }
 
-.about-us .container{
-    padding: 120px 30px;
-    margin: auto;
+.about-us .container {
+  padding: 120px 30px;
+  margin: auto;
 }
-.about-us .container .row{
-    width: 60%;
+.about-us .container .row {
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-us .container .row {
+    width: 100%;
     margin: 0 auto;
+  }
+
+  .about-us{
+    margin-top: -40%;
+  }
 }
 /* about us end  *********************************************************************************** */
 
 /* Works start */
 
-.works{
-    margin-top: 100px;
-    align-items: center;
-  }
-  
-  .works .container{
+.works {
+  margin-top: 100px;
+  align-items: center;
+}
+
+.works .container {
   margin-left: auto;
   margin-right: auto;
+}
+.works .row {
+  margin: 20px auto;
+}
+.works .col {
+  margin: 0 auto;
+}
+.works-heading {
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.works-heading h2,
+p {
+  padding-bottom: 20px;
+}
 
-}
-.works .row{
-    margin: 20px auto;
-}
-.works .col{
-    margin: 0 auto;
-}
-.works-heading{
-    text-align: center;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.works-heading h2, p{
-padding-bottom: 20px;
-}
-
-.card{
-    width: 100%;
-    margin: 10px auto;
+.card {
+  width: 100%;
+  margin: 10px auto;
+  border: none;
 }
 
 @media only screen and (max-width: 600px) {
-  .card{
-    width: 80%;
+  .card {
+    width: 90%;
     margin: 10px auto;
-}
+  }
+  .works-heading {
+    width: 90%;
+  }
+
+  .card-img-top {
+    width: 70%;
+  }
+
+  .works .row {
+    margin: 0 auto;
+  }
 }
 /* works end  *********************************************************************************** */
 
 /* slideshow gallery start */
-.gallery{
-    background-color: white;
-    background-image: url(./images/Home-page/Home-works-banner.webp);
-    background-size: 100% 100vh;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+.gallery {
+  background-color: white;
+  background-image: url(./images/Home-page/Home-works-banner.webp);
+  background-size: 100% 100vh;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
-.gallery-left{
+.gallery-left {
   padding: 10px 60px;
   margin-top: auto;
   margin-bottom: auto;
@@ -267,11 +301,11 @@ padding-bottom: 20px;
 
 } */
 
-*{
+* {
   box-sizing: border-box;
 }
 
-.carousel-cell{
+.carousel-cell {
   width: 66%;
   height: 70vh;
   margin-right: 10px;
@@ -280,28 +314,27 @@ padding-bottom: 20px;
   background-position: center center;
 }
 
-.carousel-cell::before{
+.carousel-cell::before {
   display: block;
-  content: '';
+  content: "";
 }
 
 @media only screen and (max-width: 600px) {
-  .carousel-cell{
+  .carousel-cell {
     height: 50vh;
   }
-  
 }
 
 /* slideshow gallery end *********************************************************************** */
 
 /* testimonial start */
-.testimonial{
+.testimonial {
   display: flex;
   justify-content: center;
   height: 80vh;
 }
 
-.testimonial-head{
+.testimonial-head {
   margin-top: 20px;
   text-align: center;
   width: 60%;
@@ -310,7 +343,7 @@ padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 600px) {
-  .testimonial{
+  .testimonial {
     height: 100vh;
   }
 }
@@ -318,26 +351,25 @@ padding-bottom: 20px;
 /* testimonial end ****************************************************************************** */
 
 /* footer start */
-.footer{
+.footer {
   display: flex;
   justify-content: center;
 }
-.footer-logo{
+.footer-logo {
   width: 150px;
   /* text-align: center; */
-  
 }
 
-.footer .container div{
+.footer .container div {
   text-align: center;
 }
 
-.footer-social-icons a{
- padding: 5px 20px 0 0;
- color: #8028E9;
+.footer-social-icons a {
+  padding: 5px 20px 0 0;
+  color: #8028e9;
 }
-.fa-brands:hover{
- transform: scale(2);
+.fa-brands:hover {
+  transform: scale(2);
 }
 
 /* footer end*/
