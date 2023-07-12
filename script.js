@@ -1,3 +1,35 @@
+// smooth scroll start
+// Smooth scrolling for all links with class "smooth-scroll"
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('.smooth-scroll');
+    
+    for (let link of links) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const target = document.querySelector(this.getAttribute('href'));
+        
+        if (target) {
+          scrollTo(target.offsetTop, 1000); // Adjust the duration as needed
+        }
+      });
+    }
+    
+    function scrollTo(to, duration) {
+      if (duration <= 0) return;
+      const difference = to - window.pageYOffset;
+      const perTick = difference / duration * 10;
+    
+      setTimeout(function() {
+        window.scroll(0, window.pageYOffset + perTick);
+        if (window.pageYOffset === to) return;
+        scrollTo(to, duration - 10);
+      }, 10);
+    }
+  });
+  
+// smooth scroll end
+
 // vars
 'use strict'
 var	testim = document.getElementById("testim"),

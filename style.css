@@ -1,3 +1,11 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100%;
   color: #333;
@@ -128,7 +136,7 @@ h6 {
   font-weight: bolder;
 }
 
-.heading1 {
+.heading1{
   border: 1px #000;
   margin-top: 6px;
   font-family: Open Sans, sans-serif;
@@ -180,11 +188,11 @@ h6 {
 }
 
 @media only screen and (max-width: 600px) {
-  .heading1{
+  .heading1 {
     font-size: 35px;
   }
 
-  .container{
+  .container {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -193,10 +201,16 @@ h6 {
 /* home page end * ************************************************************************************ */
 
 /* about us start */
+
+.heading-paragraph{
+padding: 40px 0;
+}
+
 .about-us {
   background-color: #fff;
   background-image: linear-gradient(#fff 37%, rgba(255, 255, 255, 0) 71%),
     url(./images/Home-page/About-Us-Banner.webp);
+
   background-size: 100% 100vh;
   width: 100%;
   height: 100vh;
@@ -219,10 +233,18 @@ h6 {
     margin: 0 auto;
   }
 
-  .about-us{
+  .about-us {
     margin-top: -40%;
   }
 }
+
+@media only screen and (max-width: 500px) {
+
+}
+@media only screen and (max-width: 300px) {
+
+}
+
 /* about us end  *********************************************************************************** */
 
 /* Works start */
@@ -280,8 +302,8 @@ p {
 
 /* slideshow gallery start */
 .gallery {
-  background-color: white;
-  background-image: url(./images/Home-page/Home-works-banner.webp);
+  background-color: rgb(231, 231, 231);
+  /* background-image: url(./images/Home-page/Home-works-banner.webp); */
   background-size: 100% 100vh;
   width: 100%;
   height: 100vh;
@@ -350,7 +372,54 @@ p {
 /* ------testimonial  close-------*/
 /* testimonial end ****************************************************************************** */
 
+/* contact us start */
+#contact-us{
+  height : 620px;
+  display: flex;
+  align-items: center;
+
+}
+#contact-us iframe{
+  width: 100%;
+  height: 450px;
+}
+
+#contact-us form label, #contact-us form input, #contact-us form textarea{
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 25px;
+  font-weight: bolder;
+  font-family: Open Sans, sans-serif;
+  font-size: 20px;
+  border-color: #8028e9;
+}
+
+.submit{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bolder;
+}
+
+/* contact us end */
+
+
+
 /* footer start */
+
+@media (min-width: 992px){
+.col-lg-3 {
+    flex: 0 0 auto;
+    width: 30%;
+}
+}
+
+.text-muted{
+  padding: 0;
+}
 .footer {
   display: flex;
   justify-content: center;
@@ -368,8 +437,13 @@ p {
   padding: 5px 20px 0 0;
   color: #8028e9;
 }
+.fa-instagram{
+ font-size: 20px;
+}
+
 .fa-brands:hover {
-  transform: scale(2);
+  transform: scale(1.7);
+  transition: all  1s;
 }
 
 /* footer end*/
