@@ -1,3 +1,25 @@
+// gallery start
+
+// gallery end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // smooth scroll start
 // Smooth scrolling for all links with class "smooth-scroll"
 document.addEventListener('DOMContentLoaded', function() {
